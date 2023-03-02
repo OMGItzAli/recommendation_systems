@@ -74,8 +74,8 @@ def other_recommendations_page():
     # Get the indices of the top 10 similar books
     similar_book_indices = similarities.argsort()[0][-11:-1][::-1]
 
-    # Display the top 10 similar books
-    st.write(f"Here are 10 books similar to {selected_book}:")
+    # Display the top 9 similar books
+    st.write(f"Here are 9 books similar to {selected_book}:")
     for i, idx in enumerate(similar_book_indices):
         if i == 0:
             continue
